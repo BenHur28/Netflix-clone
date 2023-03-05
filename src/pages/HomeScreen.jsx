@@ -4,7 +4,7 @@ import Banner from "../components/Banner";
 
 const HomeScreen = () => {
 	return (
-		<div className="h-screen">
+		<div className="h-screen bg-zinc-900">
 			<Navbar />
 			<Banner />
 		</div>
