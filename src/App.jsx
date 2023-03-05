@@ -1,10 +1,11 @@
 import { useState } from "react";
 import "./App.css";
+import HomeScreen from "./pages/HomeScreen";
 
 function App() {
 	return (
 		<div className="App">
-			<h1>Netflix Clone</h1>
+			<HomeScreen />
 		</div>
 	);
 }
