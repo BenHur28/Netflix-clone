@@ -7,16 +7,16 @@ const Login = () => {
 
 	return (
 		<div className="h-screen w-screen bg-cover bg-fade-pattern">
+			<div className="flex justify-between z-10">
+				<img className="fixed left-0 top-2 h-16 w-30 pl-20 cursor-pointer" src={logo} alt="" />
+				<button onClick={() => setSignIn(true)} className="bg-red-600 text-white rounded-sm px-5 py-2 fixed right-20 top-4 cursor-pointer">
+					Sign In
+				</button>
+			</div>
 			{signIn ? (
 				<SignUpScreen />
 			) : (
 				<>
-					<div className="flex justify-between z-10">
-						<img className="fixed left-0 top-2 h-16 w-30 pl-20 cursor-pointer" src={logo} alt="" />
-						<button onClick={() => setSignIn(true)} className="bg-red-600 text-white rounded-sm px-5 py-2 fixed right-20 top-4 cursor-pointer">
-							Sign In
-						</button>
-					</div>
 					<div className="flex flex-col justify-center w-screen items-center fixed top-1/3 z-10">
 						<h1 className="text-white text-5xl text-center mb-3">Unlimited films, TV programmes and more.</h1>
 						<h2 className="text-white text-3xl text-center mb-3">Watch anywhere. Cancel at any time.</h2>
