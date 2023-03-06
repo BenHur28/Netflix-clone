@@ -17,7 +17,7 @@ const Banner = () => {
 		fetchData();
 	}, []);
 
-	console.log(movie);
+	// console.log(movie);
 
 	return (
 		<div
@@ -30,10 +30,10 @@ const Banner = () => {
 				<h1 className="text-white text-5xl">{movie?.title || movie?.name || movie?.original_name}</h1>
 				<h2 className="text-white text-lg ml-0.5 mt-4 w-1/3">{truncate(movie?.overview, 150)}</h2>
 				<div className="ml-1 mt-4">
-					<button className="text-white bg-zinc-700 text-xl px-10 py-3 rounded-md mr-5 transition-colors duration-500 hover:bg-white hover:text-black">
+					<button className="text-white bg-zinc-800 text-xl px-10 py-3 rounded-md mr-5 transition-colors duration-500 hover:bg-white hover:text-black">
 						Play
 					</button>
-					<button className="text-white bg-zinc-700 text-xl px-10 py-3 rounded-md transition-colors duration-500 hover:bg-white hover:text-black">
+					<button className="text-white bg-zinc-800 text-xl px-10 py-3 rounded-md transition-colors duration-500 hover:bg-white hover:text-black">
 						My List
 					</button>
 				</div>

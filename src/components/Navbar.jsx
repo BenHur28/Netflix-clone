@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import logo from "../assets/netflix_logo.png";
 
 const Navbar = () => {
 	const [show, handleShow] = useState(false);
@@ -24,7 +25,7 @@ const Navbar = () => {
 			}`}
 		>
 			<div className="flex justify-between">
-				<img className="fixed left-0 top-2 h-16 w-30 pl-20 cursor-pointer" src="https://assets.stickpng.com/images/580b57fcd9996e24bc43c529.png" alt="" />
+				<img className="fixed left-0 top-2 h-16 w-30 pl-20 cursor-pointer" src={logo} alt="" />
 				<img className="fixed right-20 top-4 w-12 h-12 cursor-pointer" src="https://upload.wikimedia.org/wikipedia/commons/0/0b/Netflix-avatar.png" alt="" />
 			</div>
 		</div>
