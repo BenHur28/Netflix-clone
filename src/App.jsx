@@ -21,11 +21,11 @@ function App() {
 					})
 				);
 			} else {
-				dispatch(logout);
+				dispatch(logout());
 			}
 		});
 		return unsubscribe;
-	}, []);
+	}, [dispatch]);
 
 	console.log(user);
 	return (
