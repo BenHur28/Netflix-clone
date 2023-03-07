@@ -14,9 +14,6 @@ const Row = (props) => {
 		}
 		fetchData();
 	}, []);
-
-	console.log(props.title);
-	console.log(movie);
 	return (
 		<div className="bg-zinc-900 py-10">
 			<h1 className="text-white text-4xl mb-4 ml-20">{props.title}</h1>

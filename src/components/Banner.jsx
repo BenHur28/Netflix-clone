@@ -17,8 +17,6 @@ const Banner = () => {
 		fetchData();
 	}, []);
 
-	// console.log(movie);
-
 	return (
 		<div
 			className="relative bg-cover bg-center object-contain h-4/5"
